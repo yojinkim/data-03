@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공지사항 — 라퀴진 클럽</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">라퀴진 클럽</span>
+      <span class="brand-sub">LA CUISINE CLUB</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">홈</a>
+      <a href="about.html">소개</a>
+      <a href="notice.html" class="active">공지사항</a>
+      <a href="recipe.html">레시피 게시판</a>
+      <a href="meeting.html">정기모임</a>
+      <a href="contact.html">오시는길</a>
+    </nav>
+    <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="container">
+    <p class="hero-eyebrow-note">공지사항</p>
+    <h1>운영진이 전하는 소식</h1>
+    <p class="lead">모임 일정 변경, 회비 안내, 그 밖에 클럽 운영에 관한 소식을 올려두는 게시판이에요.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div class="board-toolbar">
+      <div></div>
+      <button class="btn" id="btn-new">+ 새 공지 작성</button>
+    </div>
+
+    <div class="form-panel" id="form-panel">
+      <h3 id="form-title">새 공지 작성</h3>
+      <form id="notice-form">
+        <input type="hidden" id="notice-id">
+        <div class="form-grid-2">
+          <div class="form-row">
+            <label for="notice-title">제목</label>
+            <input type="text" id="notice-title" required maxlength="120">
+          </div>
+          <div class="form-row">
+            <label for="notice-author">작성자</label>
+            <input type="text" id="notice-author" required maxlength="40" value="운영진">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="notice-content">내용</label>
+          <textarea id="notice-content" required maxlength="2000"></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn" id="btn-submit">등록하기</button>
+          <button type="button" class="btn btn-quiet" id="btn-cancel">취소</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="board-list" id="notice-list">
+      <div class="empty-state">불러오는 중…</div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <div class="brand-mark">라퀴진 클럽</div>
+      <p style="margin-top:10px; max-width:36ch; color:rgba(251,243,230,0.7);">매달 한 번, 함께 장을 보고 요리하고 나눠 먹는 사람들의 모임입니다.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>메뉴</h4>
+        <ul>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="notice.html">공지사항</a></li>
+          <li><a href="recipe.html">레시피 게시판</a></li>
+          <li><a href="meeting.html">정기모임</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>안내</h4>
+        <ul>
+          <li><a href="contact.html">오시는길·문의</a></li>
+          <li>매달 셋째 주 토요일 정기모임</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container" style="padding:0; max-width:none;">© 2026 라퀴진 클럽. 강의용 샘플 사이트입니다.</div>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/notice.js"></script>
+</body>
+</html>

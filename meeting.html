@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>정기모임 — 라퀴진 클럽</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">라퀴진 클럽</span>
+      <span class="brand-sub">LA CUISINE CLUB</span>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html">홈</a>
+      <a href="about.html">소개</a>
+      <a href="notice.html">공지사항</a>
+      <a href="recipe.html">레시피 게시판</a>
+      <a href="meeting.html" class="active">정기모임</a>
+      <a href="contact.html">오시는길</a>
+    </nav>
+    <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+  </div>
+</header>
+
+<div class="page-head">
+  <div class="container">
+    <p class="hero-eyebrow-note">정기모임</p>
+    <h1>이번 달, 그리고 지난 모임들</h1>
+    <p class="lead">매달 셋째 주 토요일을 기본으로 하되, 호스트 사정에 따라 날짜가 조정될 수 있어요. 참가를 원하시면 오시는길 페이지로 문의해 주세요.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+
+    <div class="board-toolbar">
+      <div></div>
+      <button class="btn" id="btn-new">+ 모임 일정 등록</button>
+    </div>
+
+    <div class="form-panel" id="form-panel">
+      <h3 id="form-title">새 모임 일정 등록</h3>
+      <form id="meeting-form">
+        <input type="hidden" id="meeting-id">
+        <div class="form-grid-2">
+          <div class="form-row">
+            <label for="meeting-date">날짜</label>
+            <input type="date" id="meeting-date" required>
+          </div>
+          <div class="form-row">
+            <label for="meeting-time">시간</label>
+            <input type="text" id="meeting-time" placeholder="예: 오후 2시">
+          </div>
+        </div>
+        <div class="form-grid-2">
+          <div class="form-row">
+            <label for="meeting-location">장소</label>
+            <input type="text" id="meeting-location" required maxlength="120">
+          </div>
+          <div class="form-row">
+            <label for="meeting-theme">이번 달 테마</label>
+            <input type="text" id="meeting-theme" required maxlength="120" placeholder="예: 가을 제철 버섯 요리">
+          </div>
+        </div>
+        <div class="form-grid-2">
+          <div class="form-row">
+            <label for="meeting-host">호스트</label>
+            <input type="text" id="meeting-host" maxlength="40">
+          </div>
+          <div class="form-row">
+            <label for="meeting-max">모집 인원</label>
+            <input type="number" id="meeting-max" min="1" max="100">
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="meeting-description">상세 설명</label>
+          <textarea id="meeting-description" maxlength="2000" placeholder="준비물, 진행 순서 등을 자유롭게 적어주세요."></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn" id="btn-submit">등록하기</button>
+          <button type="button" class="btn btn-quiet" id="btn-cancel">취소</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="meeting-list" id="meeting-list">
+      <div class="empty-state">불러오는 중…</div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <div class="brand-mark">라퀴진 클럽</div>
+      <p style="margin-top:10px; max-width:36ch; color:rgba(251,243,230,0.7);">매달 한 번, 함께 장을 보고 요리하고 나눠 먹는 사람들의 모임입니다.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>메뉴</h4>
+        <ul>
+          <li><a href="about.html">소개</a></li>
+          <li><a href="notice.html">공지사항</a></li>
+          <li><a href="recipe.html">레시피 게시판</a></li>
+          <li><a href="meeting.html">정기모임</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>안내</h4>
+        <ul>
+          <li><a href="contact.html">오시는길·문의</a></li>
+          <li>매달 셋째 주 토요일 정기모임</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container" style="padding:0; max-width:none;">© 2026 라퀴진 클럽. 강의용 샘플 사이트입니다.</div>
+  </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/supabase-client.js"></script>
+<script src="js/meeting.js"></script>
+</body>
+</html>

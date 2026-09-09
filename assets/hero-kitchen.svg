@@ -1,0 +1,84 @@
+<svg viewBox="0 0 480 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="구리 냄비와 주방 도구가 걸린 빈티지 주방 선반 일러스트">
+  <!-- soft backdrop -->
+  <circle cx="250" cy="230" r="210" fill="#F0DCC9"/>
+  <circle cx="250" cy="230" r="210" fill="none" stroke="#DCC49E" stroke-width="1.5" stroke-dasharray="3 6"/>
+
+  <!-- upper shelf -->
+  <rect x="60" y="96" width="360" height="14" fill="#2B2118"/>
+  <path d="M76 110 L76 130 L96 110 Z" fill="#2B2118"/>
+  <path d="M404 110 L404 130 L384 110 Z" fill="#2B2118"/>
+
+  <!-- hanging hooks -->
+  <line x1="150" y1="110" x2="150" y2="132" stroke="#2B2118" stroke-width="3"/>
+  <circle cx="150" cy="136" r="5" fill="none" stroke="#2B2118" stroke-width="3"/>
+  <line x1="240" y1="110" x2="240" y2="126" stroke="#2B2118" stroke-width="3"/>
+  <circle cx="240" cy="130" r="5" fill="none" stroke="#2B2118" stroke-width="3"/>
+  <line x1="330" y1="110" x2="330" y2="128" stroke="#2B2118" stroke-width="3"/>
+  <circle cx="330" cy="132" r="5" fill="none" stroke="#2B2118" stroke-width="3"/>
+
+  <!-- copper pot hanging center -->
+  <g>
+    <path d="M204 220 Q240 196 276 220 L270 268 Q240 282 210 268 Z" fill="#C1622A"/>
+    <path d="M204 220 Q240 196 276 220" fill="none" stroke="#9B4B1F" stroke-width="3"/>
+    <ellipse cx="240" cy="220" rx="36" ry="10" fill="#E3A23D"/>
+    <path d="M204 220 Q240 236 276 220" fill="none" stroke="#9B4B1F" stroke-width="2" opacity="0.5"/>
+    <!-- handles -->
+    <path d="M204 226 Q188 226 188 244 Q188 258 204 256" fill="none" stroke="#9B4B1F" stroke-width="5" stroke-linecap="round"/>
+    <path d="M276 226 Q292 226 292 244 Q292 258 276 256" fill="none" stroke="#9B4B1F" stroke-width="5" stroke-linecap="round"/>
+    <!-- rope to hook -->
+    <line x1="240" y1="130" x2="240" y2="196" stroke="#6B5C4C" stroke-width="2"/>
+  </g>
+
+  <!-- whisk hanging left -->
+  <g>
+    <line x1="150" y1="141" x2="150" y2="196" stroke="#6B5C4C" stroke-width="2"/>
+    <line x1="150" y1="196" x2="150" y2="230" stroke="#45573A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M150 230 C132 246 132 274 150 288" fill="none" stroke="#B8B0A2" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M150 230 C144 250 144 274 150 288" fill="none" stroke="#B8B0A2" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M150 230 C156 250 156 274 150 288" fill="none" stroke="#B8B0A2" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M150 230 C168 246 168 274 150 288" fill="none" stroke="#B8B0A2" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- ladle hanging right -->
+  <g>
+    <line x1="330" y1="137" x2="330" y2="236" stroke="#6B5C4C" stroke-width="2"/>
+    <line x1="330" y1="236" x2="330" y2="252" stroke="#45573A" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="330" cy="270" r="16" fill="#E3A23D" stroke="#9B4B1F" stroke-width="2"/>
+  </g>
+
+  <!-- lower shelf -->
+  <rect x="60" y="360" width="360" height="14" fill="#2B2118"/>
+  <path d="M76 374 L76 394 L96 374 Z" fill="#2B2118"/>
+  <path d="M404 374 L404 394 L384 374 Z" fill="#2B2118"/>
+
+  <!-- jar with dried herbs -->
+  <g>
+    <rect x="96" y="300" width="58" height="60" rx="6" fill="#FFFDF9" stroke="#DCC49E" stroke-width="2"/>
+    <rect x="96" y="290" width="58" height="14" rx="4" fill="#DCC49E"/>
+    <path d="M110 300 C104 270 116 246 118 226" fill="none" stroke="#45573A" stroke-width="4" stroke-linecap="round"/>
+    <path d="M122 300 C120 264 132 244 138 220" fill="none" stroke="#33422B" stroke-width="4" stroke-linecap="round"/>
+    <path d="M134 300 C140 272 128 250 140 230" fill="none" stroke="#45573A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <!-- stacked bowls -->
+  <g>
+    <ellipse cx="240" cy="352" rx="46" ry="12" fill="#E3A23D"/>
+    <path d="M196 344 Q240 366 284 344 L284 336 Q240 356 196 336 Z" fill="#cf8f30"/>
+    <ellipse cx="240" cy="330" rx="40" ry="10" fill="#F3E4CB" stroke="#DCC49E" stroke-width="2"/>
+  </g>
+
+  <!-- rolling pin leaning -->
+  <g transform="rotate(18 330 330)">
+    <rect x="292" y="322" width="90" height="14" rx="7" fill="#B8895A"/>
+    <rect x="282" y="323" width="12" height="12" rx="6" fill="#8A5F3A"/>
+    <rect x="382" y="323" width="12" height="12" rx="6" fill="#8A5F3A"/>
+  </g>
+
+  <!-- dried chili strand accent -->
+  <g>
+    <path d="M96 130 Q120 160 96 190 Q72 220 96 250" fill="none" stroke="#6B5C4C" stroke-width="1.5" stroke-dasharray="1 5"/>
+    <ellipse cx="99" cy="150" rx="7" ry="11" fill="#C1622A" transform="rotate(20 99 150)"/>
+    <ellipse cx="90" cy="180" rx="7" ry="11" fill="#9B4B1F" transform="rotate(-15 90 180)"/>
+    <ellipse cx="99" cy="212" rx="7" ry="11" fill="#C1622A" transform="rotate(20 99 212)"/>
+  </g>
+</svg>
